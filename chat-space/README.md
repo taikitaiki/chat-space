@@ -14,7 +14,7 @@ Things you may want to cover:
 * Database creation
 
 
-## membersテーブル(users,groupsの中間テーブル)
+## membersテーブル(usersとgroupsの中間テーブル)
 
 |Column|Type|Options|
 |------|----|-------|
