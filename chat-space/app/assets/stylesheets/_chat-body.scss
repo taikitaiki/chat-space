@@ -1,0 +1,22 @@
+.contents {
+  height: 100vh;
+  width: calc(100vw - 300px);
+  background-color: #FAFAFA;
+  float: right;
+}
+
+.header {
+  height: 100px;
+  background-color: white;
+  padding: 0 40px;
+    .header-left {
+      __group {
+        color: #333333
+      }
+    }
+}
+
+.footer {
+  height: 90px;
+  background-color: #DDDDDD;
+}

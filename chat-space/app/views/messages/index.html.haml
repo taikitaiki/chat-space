@@ -1,14 +1,14 @@
-!!!
-%html{lang: "ja"}
-  %head
-    %meta{charset: "utf-8"}
-
-.side_bar
+.side-bar
   .user
     .user__name
-      %P taiki
+      taiki
+    %ul.user__elements
+      %ls.cog
+      %i.far.fa-edit
+      %ls.edit
+      %i.fa.fa-cog
 
-  .groups
+  .group-list
     .group
       .group__name
         sample group
@@ -17,6 +17,30 @@
 
     .group
       .group__name
-        sample group
+        group名
       .group__message
         まだメッセージありません。
+
+    .group
+      .group__name
+        group名
+      .group__message
+        まだメッセージありません。
+
+
+.contents
+  .header
+    .header-left
+      .header-left__group
+        sampleグループ
+        %ul.header-left__members
+        %li.member
+          aメンバー
+        %li.member
+          bメンバー
+        %li.member
+          cメンバー
+    .header-right
+
+
+.footer
