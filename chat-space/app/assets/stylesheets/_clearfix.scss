@@ -1,7 +1,7 @@
-@mixin clearfix() {
+@mixin clearfix {
   &:after {
-    content: '';
-    display: block;
+    content: "";
     clear: both;
+    display: block;
   }
 }

@@ -1,77 +1,54 @@
-.side-bar
-  .user
-    .user__name
-      taiki
-    %ul.user__elements
-      %ls.cog
-      %i.far.fa-edit
-      %ls.edit
-      %i.fa.fa-cog
+= render 'side-bar'
 
-  .group-list
-    .group
-      .group__name
-        sample group
-      .group__message
-        Hello World
-
-    .group
-      .group__name
-        group名
-      .group__message
-        まだメッセージありません。
-
-    .group
-      .group__name
-        group名
-      .group__message
-        まだメッセージありません。
-
-
-.contents
+.chat
   .header
     .header-left
       .header-left__group
-        sampleグループ
-        %ul.header-left__members
-          Member：
-          %li.member
-            aメンバー
-          %li.member
-            bメンバー
-          %li.member
-            cメンバー
-    .header-right
-      Edit
+        sample group
+      %ul.header-left__members
+        Member：
+        %li.member
+          aメンバー
+        %li.member
+          bメンバー
+        %li.member
+          cメンバー
+    .header-edit
+      .header-edit__button
+        Edit
   .main-content
     .message
       .message-upper
         .message-upper__user-name
-          ユーザー
+          user
         .message-upper__time
-          2018/08/21
+          2018/08/21 12:00
       .message-lower
         .message-lower__text
-          メッセージテキスト
-
-      .message
+          message
+    .message
       .message-upper
         .message-upper__user-name
-          ユーザー
+          user
         .message-upper__time
-          2018/08/21
+          2018/08/21 12:00
       .message-lower
         .message-lower__text
-          メッセージテキスト
-
-        .message
+          message
+    .message
       .message-upper
         .message-upper__user-name
-          ユーザー
+          user
         .message-upper__time
-          2018/08/21
+          2018/08/21 12:00
       .message-lower
         .message-lower__text
-          メッセージテキスト
-
-.footer
+          message
+  .form
+    %form
+      %input.form__message{type: 'text', placeholder: ' type a message'}
+      .form__mask
+        %label.form__mask__image
+          =fa_icon "image"
+          %input.hidden{type: 'file'}
+      %input.form__submit{type: 'submit',value: 'Send'}

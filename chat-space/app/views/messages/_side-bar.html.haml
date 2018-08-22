@@ -1,0 +1,28 @@
+.side-bar
+  .user
+    .user__name
+      user name
+    %ul.user__elements
+      %ls.cog
+      = link_to do
+        =fa_icon "edit", class: 'icon'
+      %ls.edit
+      = link_to do
+        =fa_icon "cog", class: 'icon'
+
+  .group-list
+    .group
+      .group__name
+        sample group
+      .group__message
+        Hello World
+    .group
+      .group__name
+        group name
+      .group__message
+        まだメッセージありません。
+    .group
+      .group__name
+        group name
+      .group__message
+        まだメッセージありません。
