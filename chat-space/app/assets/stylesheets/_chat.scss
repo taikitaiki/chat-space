@@ -6,7 +6,7 @@
     height: 100px;
     background-color: $white;
     padding: 0 40px;
-    .header-left {
+    &-left {
       float: left;
       &__group {
         color: #333333;
@@ -24,7 +24,7 @@
         }
       }
     }
-    .header-edit {
+    &-edit {
       float: right;
       height: 40px;
       border: 1px solid;
@@ -41,7 +41,7 @@
     padding: 46px 40px 0;
     box-sizing: border-box;
     .message {
-      .message-upper {
+      &-upper {
         display: flex;
         &__user-name {
           font-size: 16px;
@@ -54,7 +54,7 @@
           color: #999999;
         }
       }
-      .message-lower {
+      &-lower {
         margin-top: 10px;
         &__text {
           font-size: 14px;
