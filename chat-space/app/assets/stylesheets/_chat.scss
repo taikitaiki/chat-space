@@ -27,11 +27,15 @@
     &-edit {
       float: right;
       height: 40px;
-      border: 1px solid;
+      border: 1px solid $light_blue;
       color: $light_blue;
       margin-top: 28px;
       padding: 0 20px;
       line-height: 40px;
+      &__button {
+        color: $light_blue;
+        text-decoration: none;
+      }
     }
   }
 
@@ -96,6 +100,7 @@
       color: $white;
       margin-left: 15px;
       padding: 0 30px;
+      float: right;
     }
   }
 }
