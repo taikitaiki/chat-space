@@ -56,9 +56,9 @@ Things you may want to cover:
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|references|null: false, foreign_key: true|
-|group_id|references|null: false, foreign_key: true|
-|body|text|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
+|content|string|
 |image|string|
 
 ### Association
