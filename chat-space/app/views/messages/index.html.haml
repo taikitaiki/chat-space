@@ -4,7 +4,7 @@
   .header
     .header-left
       .header-left__group
-        group.name
+        = @group.name
       %ul.header-left__members
         Member：
         %li.member
@@ -18,33 +18,8 @@
         Edit
 
   .main-content
-    .message
-      .message-upper
-        .message-upper__user-name
-          user
-        .message-upper__time
-          2018/08/21 12:00
-      .message-lower
-        .message-lower__text
-          message
-    .message
-      .message-upper
-        .message-upper__user-name
-          user
-        .message-upper__time
-          2018/08/21 12:00
-      .message-lower
-        .message-lower__text
-          message
-    .message
-      .message-upper
-        .message-upper__user-name
-          user
-        .message-upper__time
-          2018/08/21 12:00
-      .message-lower
-        .message-lower__text
-          message
+    = render @messages
+
   .form
     = form_for [@group, @message] do |f|
       = f.text_field :content, class: 'form__message', placeholder: 'type a message'
@@ -53,3 +28,4 @@
           = fa_icon 'image', class: 'icon'
           = f.file_field :image, class: 'hidden'
       = f.submit 'Send', class: 'form__submit'
+
