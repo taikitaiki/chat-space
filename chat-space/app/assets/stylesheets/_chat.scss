@@ -44,6 +44,7 @@
     background-color: $messages_light_gray;
     padding: 46px 40px 0;
     box-sizing: border-box;
+    overflow: scroll;
     .message {
       margin-bottom: 40px;
       &-upper {
