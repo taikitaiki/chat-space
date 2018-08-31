@@ -46,9 +46,7 @@ $(document).on('turbolinks:load', function(){
             });
           }
           else {
-            appendNoUser("一致するユーザーはいません") ;
-            var html = `<div class='chat-group-user clearfix'>${ user }</div>`
-            search_list.append(html);
+            appendNoUser("一致するユーザーはいません");
             }
         })
         .fail(function(){
