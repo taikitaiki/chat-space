@@ -43,5 +43,17 @@ $(function(){
     .fail(function(){
       alert('error');
     })
+
+    setInterval(function(){
+    $.ajax({
+      url: location.href.json,
+    })
+    .done(function(data){
+    })
+    .fail(function(data){
+    });
+  } else {
+    cleraInterval(interval);
+    }, 5000 );
   })
 });
