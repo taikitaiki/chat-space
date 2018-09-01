@@ -60,7 +60,6 @@ $(function(){
       data: { message: {id: message_id} },
       dataType: 'json'
     })
-
     .done(function(json){
       console.log(json);
       var insertHTML = '';
