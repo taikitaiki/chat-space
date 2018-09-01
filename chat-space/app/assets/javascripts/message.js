@@ -62,14 +62,12 @@ $(function(){
     })
 
     .done(function(json){
-      // console.log(json);
+      console.log(json);
       var insertHTML = '';
       json.forEach(function(message){
-        if (message.id > message_id) {
           // #新しいmsgがある場合の時のみbuilidHTMLで作成、それをinsertHTMLに代入
         insertHTML += buildHTML(message);
           // #buildHTMLに加えていく
-        }
       })
       $('.main-content').append(insertHTML);
       $('.main-content').animate({scrollTop: $('.main-content')[0].scrollHeight}, 'fast');
