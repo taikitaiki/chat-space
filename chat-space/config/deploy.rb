@@ -4,7 +4,7 @@ lock "~> 3.11.0"
 set :application, 'chat-space'
 set :repo_url,  'git@github.com:taikitaiki/chat-space.git'
 
-set :bundle_gemfile,  "server/Gemfile"
+set :bundle_gemfile,  "app/Gemfile"
 #deploy時、"Could not locate Gemfile" エラーが発生するため追記
 
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
