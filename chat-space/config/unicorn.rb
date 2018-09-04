@@ -8,6 +8,7 @@ stdout_path "#{app_path}/shared/log/unicorn.stdout.log"
 # app_path = File.expand_path('../../', __FILE__)
 
 # worker_processes 1
+#上記１行コメントアウトする？
 
 # working_directory app_path
 # pid "#{app_path}/tmp/pids/unicorn.pid"
